@@ -1,0 +1,15 @@
+server:
+  port: 7005
+spring:
+  application:
+    name: consumer-server-feign
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:7000/eureka/,http://${eureka.instance.hostname}:7001/eureka/
+#开启熔断器
+feign:
+  hystrix:
+    enabled: true
