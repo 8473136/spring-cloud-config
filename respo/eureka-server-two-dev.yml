@@ -1,0 +1,17 @@
+server:
+  port: 7001
+eureka:
+  server:
+    #关闭保护模式
+    enable-self-preservation: true
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    #注册中心的地址
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:7000/eureka/
+spring:
+  application:
+    name: eureka-server-two
