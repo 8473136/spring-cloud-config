@@ -16,3 +16,7 @@ spring:
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://hz.0ooo0.cn/school
+  boot:
+    admin:
+      client:
+        url: http://localhost:7007
