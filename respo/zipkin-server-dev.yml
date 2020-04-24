@@ -9,3 +9,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:7000/eureka/,http://${eureka.instance.hostname}:7001/eureka/
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
