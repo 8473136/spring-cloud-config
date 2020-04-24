@@ -1,10 +1,10 @@
 spring:
   application:
     name: zipkin-server
-  boot:
-    admin:
-      client:
-        url: http://localhost:7007
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:7007
 
 server:
   port: 9411

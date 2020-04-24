@@ -5,10 +5,10 @@ spring:
     name: consumer-server-ribbon
   zipkin:
     base-url: http://localhost:9411
-  boot:
-    admin:
-      client:
-        url: http://localhost:7007
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:7007
 eureka:
   instance:
     hostname: localhost
